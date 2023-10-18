@@ -200,7 +200,7 @@ df_new = df_new.loc[linhas_selecionadas, :]
 with st.container():
     st.markdown ('### Temos as seguintes marcas dentro da nossa plataforma:')
 
-    col1, col2, col3, col4, col5 = st.columns( 5, gap='large' )
+    col1, col2, col3, col4, col5 = st.columns( 5, gap='small' )
     with col1:
         # Restaurantes cadastrados
         restaurantes_cadastrados = df_new.loc[:, 'restaurant_name'].nunique()
