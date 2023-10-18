@@ -179,8 +179,6 @@ df_new = clean_code( df )
 col1, col2 = st.sidebar.columns([1, 3])
 
 st.sidebar.markdown('## Filtros')
-st.write('# Visão Tipos de Cozinhas')
-
 st.markdown(
     """
     ## Melhores Restaurantes dos Principais tipos Culinários
@@ -223,7 +221,7 @@ df_new = df_new.loc[linhas_selecionadas, :]
 # Layout no Streamlit
 # =======================================
 
-
+st.title( ' 🍽️ Visão Tipos de Cozinhas' )
 #with tab1:
 with st.container():
 
