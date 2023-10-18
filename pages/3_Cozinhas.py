@@ -179,12 +179,6 @@ df_new = clean_code( df )
 col1, col2 = st.sidebar.columns([1, 3])
 
 st.sidebar.markdown('## Filtros')
-st.markdown(
-    """
-    ## Melhores Restaurantes dos Principais tipos Culinários
-
-    """
-    )
 
 paises = st.sidebar.multiselect( 
         'Escolha os Paises que Deseja visualizar os Restaurantes',
@@ -222,6 +216,10 @@ df_new = df_new.loc[linhas_selecionadas, :]
 # =======================================
 
 st.title( ' 🍽️ Visão Tipos de Cozinhas' )
+
+st.container()
+st.markdown ('## Melhores Restaurantes dos Principais tipos Culinários')
+
 #with tab1:
 with st.container():
 
